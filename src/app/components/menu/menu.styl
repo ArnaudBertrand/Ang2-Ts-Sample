@@ -1,0 +1,48 @@
+@import '../../common/styles/*'
+
+.menu-container
+  background-color cYellow
+  color cBlue
+  width 100%
+  padding 0 0 1em 0
+
+.title
+  font-size 1.3em
+  text-align center
+
+  padding-bottom 5px
+  border-bottom 1px solid color5
+
+.menu
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  list-style-type none
+
+.menu-item
+  text-align center
+
+@media mqSmall
+  .menu-container
+    padding 0 1em 1em
+    border-top-right-radius 3px
+    border-bottom-right-radius 3px
+
+  .title
+    text-align left
+
+  .menu
+    flex-direction row
+
+@media mqLarge
+  .menu-container
+    width 15vw
+    position fixed
+    top 10vh
+    left 0
+    z-index 151
+    padding 1em
+
+  .menu
+    flex-direction column
+    align-items: flex-start
